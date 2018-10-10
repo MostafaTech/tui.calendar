@@ -1,6 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(fonts.css);
 
 body {
+  direction: rtl;
   font-family: 'Noto Sans', sans-serif;
   color: '#333';
   font-size: 12px;
