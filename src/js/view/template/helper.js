@@ -380,37 +380,37 @@ Handlebars.registerHelper({
     },
 
     'popupIsAllDay-tmpl': function() {
-        return 'All day';
+        return 'تمام روز';
     },
 
     'popupStateFree-tmpl': function() {
-        return 'Free';
+        return 'آزاد';
     },
 
     'popupStateBusy-tmpl': function() {
-        return 'Busy';
+        return 'مشغول';
     },
 
     'titlePlaceholder-tmpl': function() {
-        return 'Subject';
+        return 'موضوع';
     },
 
     'locationPlaceholder-tmpl': function() {
-        return 'Location';
+        return 'موقعیت';
     },
 
     'startDatePlaceholder-tmpl': function() {
-        return 'Start date';
+        return 'تاریخ شروع';
     },
 
     'endDatePlaceholder-tmpl': function() {
-        return 'End date';
+        return 'تاریخ پایان';
     },
     'popupSave-tmpl': function() {
-        return 'Save';
+        return 'ذخیره';
     },
     'popupUpdate-tmpl': function() {
-        return 'Update';
+        return 'بروزرسانی';
     },
     'popupDetailDate-tmpl': function(isAllDay, start, end) {
         var isSameDate = datetime.isSameDate(start, end);
@@ -431,13 +431,13 @@ Handlebars.registerHelper({
         return creator;
     },
     'popupDetailState-tmpl': function(schedule) {
-        return schedule.state || 'Busy';
+        return schedule.state || 'مشغول';
     },
     'popupEdit-tmpl': function() {
-        return 'Edit';
+        return 'ویرایش';
     },
     'popupDelete-tmpl': function() {
-        return 'Delete';
+        return 'حذف';
     },
     'timezoneDisplayLabel-tmpl': function(timezoneOffset, displayLabel) {
         var gmt, hour, minutes;

@@ -20,7 +20,7 @@ var THEME_DOORAY = {
     'month.dayname.fontSize': '13px',
     'month.dayname.backgroundColor': 'inherit',
     'month.dayname.fontWeight': 'normal',
-    'month.dayname.textAlign': 'left',
+    'month.dayname.textAlign': 'right',
 
     // month day grid cell 'day'
     'month.holidayExceptThisMonth.color': '#f3acac',
@@ -51,7 +51,7 @@ var THEME_DOORAY = {
     'week.dayname.borderLeft': '1px solid #ddd',
     'week.dayname.paddingLeft': '5px',
     'week.dayname.backgroundColor': 'inherit',
-    'week.dayname.textAlign': 'left',
+    'week.dayname.textAlign': 'right',
     'week.today.color': '#135de6',
     'week.pastDay.color': '#999',
 

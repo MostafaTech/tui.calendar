@@ -43,7 +43,7 @@ function DayGrid(name, options, container, theme) {
 
     this.options = util.extend({
         viewName: name,
-        daynames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        daynames: moment.weekdays(),
         renderStartDate: '',
         renderEndDate: '',
         containerBottomGutter: 18,

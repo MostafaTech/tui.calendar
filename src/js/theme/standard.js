@@ -29,7 +29,7 @@ var theme = {
     'month.dayname.backgroundColor': 'inherit',
     'month.dayname.fontSize': '12px',
     'month.dayname.fontWeight': 'normal',
-    'month.dayname.textAlign': 'left',
+    'month.dayname.textAlign': 'right',
 
     // month day grid cell 'day'
     'month.holidayExceptThisMonth.color': 'rgba(255, 64, 64, 0.4)',
@@ -62,7 +62,7 @@ var theme = {
     'week.dayname.borderLeft': 'none',
     'week.dayname.paddingLeft': '0',
     'week.dayname.backgroundColor': 'inherit',
-    'week.dayname.textAlign': 'left',
+    'week.dayname.textAlign': 'right',
     'week.today.color': 'inherit',
     'week.pastDay.color': '#bbb',
 

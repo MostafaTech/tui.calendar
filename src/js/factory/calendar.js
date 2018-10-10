@@ -386,12 +386,12 @@ Calendar.prototype._initialize = function(options) {
     }, options);
 
     this._options.week = util.extend({
-        startDayOfWeek: 0,
+        startDayOfWeek: 6,
         workweek: false
     }, util.pick(this._options, 'week') || {});
 
     this._options.month = util.extend({
-        startDayOfWeek: 0,
+        startDayOfWeek: 6,
         workweek: false,
         scheduleFilter: function(schedule) {
             return Boolean(schedule.isVisible) &&

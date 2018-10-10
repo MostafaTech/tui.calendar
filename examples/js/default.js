@@ -10,6 +10,9 @@
     var useCreationPopup = true;
     var useDetailPopup = true;
     var datePicker, selectedCalendar;
+    
+    // change the moment locale to persian globally
+    moment.locale('fa');
 
     cal = new Calendar('#calendar', {
         defaultView: 'month',
@@ -42,7 +45,7 @@
         },
         'beforeCreateSchedule': function(e) {
             console.log('beforeCreateSchedule', e);
-            saveNewSchedule(e);
+            //saveNewSchedule(e);
         },
         'beforeUpdateSchedule': function(e) {
             console.log('beforeUpdateSchedule', e);
@@ -150,13 +153,6 @@
                 viewName = cal.getViewName();
 
                 target.querySelector('input').checked = options.month.narrowWeekend;
-                break;
-            case 'toggle-start-day-1':
-                options.month.startDayOfWeek = options.month.startDayOfWeek ? 0 : 1;
-                options.week.startDayOfWeek = options.week.startDayOfWeek ? 0 : 1;
-                viewName = cal.getViewName();
-
-                target.querySelector('input').checked = options.month.startDayOfWeek;
                 break;
             case 'toggle-workweek':
                 options.month.workweek = !options.month.workweek;
@@ -353,19 +349,19 @@
         var iconClassName;
 
         if (type === 'day') {
-            type = 'Daily';
+            type = 'روزانه';
             iconClassName = 'calendar-icon ic_view_day';
         } else if (type === 'week') {
-            type = 'Weekly';
+            type = 'هفتگی';
             iconClassName = 'calendar-icon ic_view_week';
         } else if (options.month.visibleWeeksCount === 2) {
-            type = '2 weeks';
+            type = '2 هفته ای';
             iconClassName = 'calendar-icon ic_view_week';
         } else if (options.month.visibleWeeksCount === 3) {
-            type = '3 weeks';
+            type = '3 هفته ای';
             iconClassName = 'calendar-icon ic_view_week';
         } else {
-            type = 'Monthly';
+            type = 'ماهانه';
             iconClassName = 'calendar-icon ic_view_month';
         }
 

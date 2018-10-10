@@ -4,12 +4,12 @@
     <div class="{{CSS_PREFIX}}month-dayname-item"
          style="position: absolute;
                 width: {{width}}%;
-                left: {{left}}%;
-                padding-left: {{@root.styles.paddingLeft}};
-                padding-right: {{@root.styles.paddingRight}};
+                right: {{left}}%;
+                padding-right: {{@root.styles.paddingLeft}};
+                padding-left: {{@root.styles.paddingRight}};
                 line-height: {{@root.styles.height}};
                 {{#unless @last}}
-                border-right: {{@root.styles.borderLeft}};
+                border-left: {{@root.styles.borderLeft}};
                 {{/unless}}
                 ">
         <span class="{{holiday day}}" style="color: {{color}};">

@@ -57,9 +57,9 @@ function Month(options, container, controller) {
         scheduleFilter: function(schedule) {
             return Boolean(schedule.isVisible);
         },
-        startDayOfWeek: 0,
+        startDayOfWeek: 6,
         renderMonth: '2018-01',
-        daynames: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        daynames: moment.weekdays(),
         narrowWeekend: false,
         visibleWeeksCount: null,
         isAlways6Week: true,
